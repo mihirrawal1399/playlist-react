@@ -1,32 +1,40 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-    <!--
-      Notice the use of %PUBLIC_URL% in the tag above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+# :notes:playlistreact:musical_note:
+### Web Music Playlist using [ReactJS](https://reactjs.org/) and [CORS(Cross-Origin Resource Sharing)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
+a simple Website where anyone can stream one's playlist from anywhere.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Playlist</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+##
+### Getting Started
+Create a music folder for the mp3 files for your epic playlist. Suggested keeping the folder under project directory.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+Then host the music files using [http-server](https://www.npmjs.com/package/http-server) and fetch the songs on the website using CORS ↓
 
-      To begin the development, run `npm start`.
-      To create a production bundle, use `npm run build`.
-    -->
-  </body>
-</html>
+Change directory to the music folder and run `playlistweb\music> npx http-server -a localhost -p 9000 –cors`
+
+Start the Reactapp `playlistweb> npm start` 
+## Features
+
+* Displays list of `.mp3` files in your folder
+* Will play all the songs in the order displayed
+* You can jump to any song by clicking on it
+* Displays current time and total duration of the file being played
+* Play previous or next song
+* Loop through a song infinitely
+* Mute/unmute the volume
+* Highlights the song currently being played. Also lists the same at the bottom of the screen
+##
+![image](https://user-images.githubusercontent.com/54273763/123214098-6eb63900-d4e4-11eb-8cb7-f90266955b69.png)
+![image](https://user-images.githubusercontent.com/54273763/123214171-81307280-d4e4-11eb-9fc4-14bb996f8c57.png)
+![image](https://user-images.githubusercontent.com/54273763/123214201-8988ad80-d4e4-11eb-947a-efefdc33c24c.png)
+
+##
+### Dependencies:
+```
+"dependencies": {
+    "axios": "^0.15.2",
+    "cors": "^2.8.5",
+    "http-server": "^0.12.3",
+    "nodemon": "^2.0.7",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  }
+```
