@@ -11,6 +11,16 @@ Then host the music files using [http-server](https://www.npmjs.com/package/http
 Change directory to the music folder and run `playlistweb\music> npx http-server -a localhost -p 9000 –cors`
 
 Start the Reactapp `playlistweb> npm start` 
+## Features
+
+* Displays list of `.mp3` files in your folder
+* Will play all the songs in the order displayed
+* You can jump to any song by clicking on it
+* Displays current time and total duration of the file being played
+* Play previous or next song
+* Loop through a song infinitely
+* Mute/unmute the volume
+* Highlights the song currently being played. Also lists the same at the bottom of the screen
 ##
 ![image](https://user-images.githubusercontent.com/54273763/123214098-6eb63900-d4e4-11eb-8cb7-f90266955b69.png)
 ![image](https://user-images.githubusercontent.com/54273763/123214171-81307280-d4e4-11eb-9fc4-14bb996f8c57.png)
