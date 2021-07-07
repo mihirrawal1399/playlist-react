@@ -1,5 +1,5 @@
 # :notes:playlistreact:musical_note:
-### Web Music Playlist using [ReactJS](https://reactjs.org/) and [CORS(Cross-Origin Resource Sharing)]()
+### Web Music Playlist using [ReactJS](https://reactjs.org/) and [CORS(Cross-Origin Resource Sharing)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
 a simple Website where anyone can stream one's playlist from anywhere.
 
 ##
